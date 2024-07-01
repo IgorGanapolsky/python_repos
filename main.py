@@ -97,8 +97,8 @@ map = [
 
 
 def omega():
-    file1 = open('output.txt', 'r')
-    lines = file1.readlines()
+    with open('output.txt', 'r') as file1:
+        lines = file1.readlines()
     flag = ""
 
     for element in lines:
